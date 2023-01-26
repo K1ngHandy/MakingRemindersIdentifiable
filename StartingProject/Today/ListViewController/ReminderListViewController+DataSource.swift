@@ -35,7 +35,7 @@ extension ReminderListViewController {
         
         var doneButtonConfiguration = doneButtonConfiguration(for: reminder)
         doneButtonConfiguration.tintColor = .todayListCellDoneButtonTint
-        cell.accessibiliityCustomActions = [ doneButtonAccessibilityAction(for: reminder) ]
+        cell.accessibilityCustomActions = [ doneButtonAccessibilityAction(for: reminder) ]
         cell.accessibilityValue = reminder.isComplete ? reminderCompletedValue : reminderNotCompletedValue
         cell.accessories = [ .customView(configuration: doneButtonConfiguration), .disclosureIndicator(displayed: .always) ]
         
